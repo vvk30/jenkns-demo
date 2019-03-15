@@ -1,6 +1,10 @@
 package com.xoriant.demo.web.model;
 import java.util.Date;
 
+/**
+ * @author kulkarni_vs
+ *
+ */
 public class Todo {
     private int id;
     private String user;
@@ -8,6 +12,13 @@ public class Todo {
     private Date targetDate;
     private boolean isDone;
     
+	/**
+	 * @param id id
+	 * @param user user
+	 * @param desc desc
+	 * @param targetDate targetdate
+	 * @param isDone bool
+	 */
 	public Todo(int id, String user, String desc, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
