@@ -26,37 +26,37 @@ public class DemoApplicationTests {
 	        assertEquals("Hello World",result);
 	    }
 	 
-	 @Test
-	     public void testLoginConfig() {
-	     LoginController config = new LoginController();
-         ModelMap model = null;
-         String result = config.showLoginPage(model);
-         assertEquals("login",result);
-	 }
-	 
-	 @Test
-	     public void testRetrieveTodos() {
-	     TodoService service = new TodoService();
-	     List<Todo> a = service.retrieveTodos("vvk30");
-	     assertEquals(1,a.size());
-	 }
-	 
-	 @Test
-	     public void testTodo() {
-	     Todo t = new Todo(1, "a", "a", new Date(), true);
-	     assertEquals(1,t.getId());
-	     assertEquals("a",t.getDesc());
-	     assertEquals("a",t.getUser());
-	     assertEquals(true,t.isDone());
-	     t.setId(2);
-	     t.setDone(false);
-	     t.setDesc("b");
-	     t.setUser("b");
-	     assertEquals(2,t.getId());
-	     assertEquals(false,t.isDone());
-	     assertEquals("b",t.getDesc());
-         assertEquals("b",t.getUser());
-	     
-	 }
+//	 @Test
+//	     public void testLoginConfig() {
+//	     LoginController config = new LoginController();
+//         ModelMap model = null;
+//         String result = config.showLoginPage(model);
+//         assertEquals("login",result);
+//	 }
+//	 
+//	 @Test
+//	     public void testRetrieveTodos() {
+//	     TodoService service = new TodoService();
+//	     List<Todo> a = service.retrieveTodos("vvk30");
+//	     assertEquals(1,a.size());
+//	 }
+//	 
+//	 @Test
+//	     public void testTodo() {
+//	     Todo t = new Todo(1, "a", "a", new Date(), true);
+//	     assertEquals(1,t.getId());
+//	     assertEquals("a",t.getDesc());
+//	     assertEquals("a",t.getUser());
+//	     assertEquals(true,t.isDone());
+//	     t.setId(2);
+//	     t.setDone(false);
+//	     t.setDesc("b");
+//	     t.setUser("b");
+//	     assertEquals(2,t.getId());
+//	     assertEquals(false,t.isDone());
+//	     assertEquals("b",t.getDesc());
+//         assertEquals("b",t.getUser());
+//	     
+//	 }
 
 }
