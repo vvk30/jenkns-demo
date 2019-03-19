@@ -48,11 +48,11 @@ public class DemoApplicationTests {
 	     assertEquals("a",t.getDesc());
 	     assertEquals("a",t.getUser());
 	     assertEquals(true,t.isDone());
-	     t.setId(2);
+	     t.setId(3);
 	     t.setDone(false);
 	     t.setDesc("b");
 	     t.setUser("b");
-	     assertEquals(2,t.getId());
+	     assertEquals(3,t.getId());
 	     assertEquals(false,t.isDone());
 	     assertEquals("b",t.getDesc());
          assertEquals("b",t.getUser());
