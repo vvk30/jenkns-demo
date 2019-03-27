@@ -11,14 +11,6 @@ import com.xoriant.demo.web.model.Todo;
 public class TodoService {
     private static List<Todo> todos = new ArrayList<Todo>();
 
-    static {
-        todos.add(new Todo(1, "vvk30", "Learn Spring MVC", new Date(),
-                false));
-        todos.add(new Todo(2, "in28Minutes", "Learn Struts", new Date(), false));
-        todos.add(new Todo(3, "in28Minutes", "Learn Hibernate", new Date(),
-                false));
-    }
-
     public List<Todo> retrieveTodos(String user) {
         List<Todo> filteredTodos = new ArrayList<Todo>();
         for (Todo todo : todos) {
