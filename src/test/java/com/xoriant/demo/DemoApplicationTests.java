@@ -38,7 +38,7 @@ public class DemoApplicationTests {
 	     public void testRetrieveTodos() {
 	     TodoService service = new TodoService();
 	     List<Todo> a = service.retrieveTodos("vvk30");
-	     assertEquals(1,a.size());
+	     assertEquals(0,a.size());
 	 }
 	 
 	 @Test
