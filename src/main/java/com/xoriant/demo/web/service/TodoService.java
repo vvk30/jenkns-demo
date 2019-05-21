@@ -20,4 +20,8 @@ public class TodoService {
         }
         return filteredTodos;
     }
+    
+    public void setTodos(Todo todo) {
+        todos.add(todo);
+    }
 }

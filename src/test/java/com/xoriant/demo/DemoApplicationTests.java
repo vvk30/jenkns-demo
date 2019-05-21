@@ -36,9 +36,13 @@ public class DemoApplicationTests {
 	 
 	 @Test
 	     public void testRetrieveTodos() {
+	     Todo t1 = new Todo(1, "vvk30", "a", new Date(), true);
+	     Todo t2 = new Todo(1, "vvk", "a", new Date(), true);
 	     TodoService service = new TodoService();
+	     service.setTodos(t1);
+	     service.setTodos(t2);
 	     List<Todo> a = service.retrieveTodos("vvk30");
-	     assertEquals(0,a.size());
+	     assertEquals(1,a.size());
 	 }
 	 
 	 @Test
