@@ -23,7 +23,7 @@ public class DemoApplicationTests {
 	    public void testApplicationConfiguration() {
 	        ApplicationConfiguration config = new ApplicationConfiguration();
 	        String result = config.hello();
-	        assertEquals("Hello World",result);
+	        assertEquals("Hello World again",result);
 	    }
 	     
 	 @Test

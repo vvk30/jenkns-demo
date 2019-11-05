@@ -14,7 +14,9 @@ public class ApplicationConfiguration {
 	 */
 	@RequestMapping("/hello")
 	public final String hello() {
-		return "Hello World";
+		return "Hello World again";
 	}
 
+
+	//This is just a test build
 }
